@@ -27,10 +27,10 @@ echo "Converting Alpine to postmarketOS (this may take 10-20 minutes)..."
 pd sh alpine --shared-tmp -- sh -c '
     echo "  Setting up repositories..."
     cat <<EOF > /etc/apk/repositories 
-http://mirror.postmarketos.org/postmarketos/master
-http://dl-cdn.alpinelinux.org/alpine/edge/main
-http://dl-cdn.alpinelinux.org/alpine/edge/community
-http://dl-cdn.alpinelinux.org/alpine/edge/testing
+https://mirror.postmarketos.org/postmarketos/master
+https://dl-cdn.alpinelinux.org/alpine/edge/main
+https://dl-cdn.alpinelinux.org/alpine/edge/community
+https://dl-cdn.alpinelinux.org/alpine/edge/testing
 EOF
     
     echo "  Adding postmarketOS keys..."
