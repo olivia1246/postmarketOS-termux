@@ -1,6 +1,6 @@
 # postmarketOS Termux
 
-Experimental unofficial installer for running postmarketOS with Phosh inside of Termux.
+Experimental unofficial installer for running postmarketOS with Phosh inside of Termux on Android.
 
 Big thanks to these guides for making it pretty easy for me to make an installer script for Termux:
 - [Running postmarketOS on Android Termux proot without flashing a custom rom](https://ivonblog.com/en-us/posts/postmarketos-in-termux-proot/)
