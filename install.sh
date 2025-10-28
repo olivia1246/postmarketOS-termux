@@ -59,8 +59,8 @@ EOF
 
 echo "postmarketOS installation complete!"
 
-echo "Setting up start script..."
-if wget -q https://example.com/start.sh -O start-pmos.sh; then
+echo "Downloading start script..."
+if wget -q https://raw.githubusercontent.com/olivia1246/postmarketOS-termux/refs/heads/main/start.sh -O start-pmos.sh; then
     chmod +x start-pmos.sh
     echo "Start script downloaded."
 else
