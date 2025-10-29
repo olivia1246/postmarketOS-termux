@@ -53,7 +53,7 @@ EOF
 
     echo "  Downloading start script part 2..."
     cd /home/user
-    if wget -q https://raw.githubusercontent.com/olivia1246/postmarketOS-termux/refs/heads/main/start-part1.sh -O start-pmos-part2.sh; then
+    if wget -q https://raw.githubusercontent.com/olivia1246/postmarketOS-termux/refs/heads/main/start-part2.sh -O start-pmos-part2.sh; then
         chmod +x start-pmos-part2.sh
         chown user:user start-pmos-part2.sh
         echo "Start script part 2 downloaded."
