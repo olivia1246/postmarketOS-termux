@@ -50,23 +50,32 @@ EOF
     echo "  Configuring sudo..."
     apk add sudo > /dev/null 2>&1
     echo "user ALL=(ALL) NOPASSWD: ALL" | sudo tee -a /etc/sudoers > /dev/null
+
+    echo "  Downloading start script part 2..."
+    cd /home/user
+    if wget -q https://raw.githubusercontent.com/olivia1246/postmarketOS-termux/refs/heads/main/start-part1.sh -O start-pmos-part2.sh; then
+        chmod +x start-pmos-part2.sh
+        chown user:user start-pmos-part2.sh
+        echo "Start script part 2 downloaded."
+    else
+        echo "Could not download start script part 2."
+    fi
 '
 
-echo "postmarketOS installation complete!"
-
-echo "Downloading start script..."
-if wget -q https://raw.githubusercontent.com/olivia1246/postmarketOS-termux/refs/heads/main/start.sh -O start-pmos.sh; then
-    chmod +x start-pmos.sh
-    echo "Start script downloaded."
+echo "Downloading start script part 1..."
+if wget -q https://raw.githubusercontent.com/olivia1246/postmarketOS-termux/refs/heads/main/start-part1.sh -O start-pmos-part1.sh; then
+    chmod +x start-pmos-part1.sh
+    echo "Start script part 1 downloaded."
 else
-    echo "Could not download start script."
+    echo "Could not download start script part 1."
 fi
 
-echo ""
-echo "postmarketOS has been successfully installed!"
+clear
+echo "postmarketOS installer has completed (hopefully successfully)!"
 echo ""
 echo "To start:"
-echo "1. Run: ./start-pmos.sh"
-echo "2. Open Termux-X11 app"
+echo "1. Run: ./start-pmos-part1.sh"
+echo "2. Run inside the proot: ./start-pmos-part2.sh"
+echo "3. Open Termux-X11 app"
 echo ""
 echo "Recommended: Check the guide at https://ivonblog.com/en-us/posts/postmarketos-in-termux-proot/"
