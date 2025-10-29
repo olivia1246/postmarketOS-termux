@@ -30,16 +30,16 @@ https://dl-cdn.alpinelinux.org/alpine/edge/testing
 EOF
     
     echo "  Adding postmarketOS keys..."
-    apk add -u --allow-untrusted -y postmarketos-keys > /dev/null 2>&1
+    apk add -u --allow-untrusted postmarketos-keys > /dev/null 2>&1
     
     echo "  Updating package database..."
     apk update > /dev/null 2>&1
     
     echo "  Upgrading system..."
-    apk upgrade -y > /dev/null 2>&1
+    apk upgrade > /dev/null 2>&1
     
     echo "  Installing postmarketOS packages..."
-    apk add -y postmarketos-base openbox cage postmarketos-ui-phosh postmarketos-tweaks firefox mobile-config-firefox font-noto font-noto-cjk font-noto-cjk-extra font-noto-emoji > /dev/null 2>&1
+    apk add postmarketos-base openbox cage postmarketos-ui-phosh postmarketos-tweaks firefox mobile-config-firefox font-noto font-noto-cjk font-noto-cjk-extra font-noto-emoji > /dev/null 2>&1
     
     echo "  Creating user account..."
     adduser -g wheel,storage,video,audio -D user > /dev/null 2>&1
