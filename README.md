@@ -2,7 +2,7 @@
 
 Requires [Termux:X11](https://github.com/termux/termux-x11).
 
-Experimental unofficial rootless installer for running [postmarketOS](https://postmarketos.org) with [Phosh](https://wiki.postmarketos.org/wiki/Phosh) inside of [Termux](https://termux.dev).
+Experimental unofficial rootless installer for running [postmarketOS](https://postmarketos.org) with [Plasma Mobile](https://plasma-mobile.org) inside of [Termux](https://termux.dev).
 
 Big thanks to these guides for making it pretty easy for me to make an installer:
 - [Running postmarketOS on Android Termux proot without flashing a custom rom](https://ivonblog.com/en-us/posts/postmarketos-in-termux-proot)
