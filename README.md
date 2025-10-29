@@ -1,6 +1,6 @@
 # postmarketOS Termux
 
-Experimental unofficial installer for running [postmarketOS](https://postmarketos.org) edge with [Phosh](https://wiki.postmarketos.org/wiki/Phosh) inside of [Termux](https://termux.dev) on Android.
+Experimental unofficial installer for running [postmarketOS](https://postmarketos.org) edge with [Phosh](https://wiki.postmarketos.org/wiki/Phosh) inside of [Termux](https://termux.dev).
 
 Big thanks to these guides for making it pretty easy for me to make an installer:
 - [Running postmarketOS on Android Termux proot without flashing a custom rom](https://ivonblog.com/en-us/posts/postmarketos-in-termux-proot/)
