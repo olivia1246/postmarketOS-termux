@@ -8,5 +8,6 @@ termux-x11 :0 &
 pd sh alpine --user user --shared-tmp -- bash -c '
     export DISPLAY=:0
     export XDG_RUNTIME_DIR=/tmp
-    dbus-launch --exit-with-session startplasma-x11
+    openbox &
+    cage phoc -E "/usr/libexec/phosh"
 '
