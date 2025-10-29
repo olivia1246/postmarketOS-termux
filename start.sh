@@ -9,5 +9,5 @@ pd sh alpine --user user --shared-tmp -- bash -c '
     export DISPLAY=:0
     export XDG_RUNTIME_DIR=/tmp
     openbox &
-    cage phoc -E "/usr/libexec/phosh" &
+    cage phoc -E "/usr/libexec/phosh"
 '
