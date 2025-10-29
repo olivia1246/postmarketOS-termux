@@ -46,7 +46,6 @@ EOF
     
     echo "  Setting timezone..."
     ln -sf /usr/share/zoneinfo/America/New_York /etc/localtime
-    setup-timezone > /dev/null 2>&1
     
     echo "  Configuring sudo..."
     apk add sudo > /dev/null 2>&1
