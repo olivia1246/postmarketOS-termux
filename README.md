@@ -5,7 +5,7 @@ Requires [Termux:X11](https://github.com/termux/termux-x11).
 Experimental unofficial installer for running [postmarketOS](https://postmarketos.org) with [Phosh](https://wiki.postmarketos.org/wiki/Phosh) inside of [Termux](https://termux.dev).
 
 Big thanks to these guides for making it pretty easy for me to make an installer:
-- [Running postmarketOS on Android Termux proot without flashing a custom rom](https://ivonblog.com/en-us/posts/postmarketos-in-termux-proot/)
+- [Running postmarketOS on Android Termux proot without flashing a custom rom](https://ivonblog.com/en-us/posts/postmarketos-in-termux-proot/) (Recommended to read for specific Termux:X11 settings)
 - [Existing Alpine installation](https://wiki.postmarketos.org/wiki/Existing_Alpine_installation)
 
 While this ["device"](https://wiki.postmarketos.org/wiki/PRoot_aarch64_(proot-aarch64)) is marked as tested and on the official wiki, it is very extremely incomplete, missing device packages (unlikely to get any though) and all features (Internal storage, 3D Acceleration, Audio, FDE) are marked as untested as of writing this.
