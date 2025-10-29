@@ -39,7 +39,7 @@ EOF
     apk upgrade > /dev/null 2>&1
     
     echo "  Installing postmarketOS packages..."
-    apk add postmarketos-base cage postmarketos-ui-plasma-mobile postmarketos-tweaks firefox mobile-config-firefox font-noto font-noto-cjk font-noto-cjk-extra font-noto-emoji > /dev/null 2>&1
+    apk add postmarketos-base plasma-workspace postmarketos-ui-plasma-mobile postmarketos-tweaks firefox mobile-config-firefox font-noto font-noto-cjk font-noto-cjk-extra font-noto-emoji cage > /dev/null 2>&1
     
     echo "  Creating user account..."
     adduser -g wheel,storage,video,audio -D user > /dev/null 2>&1
