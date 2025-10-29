@@ -19,7 +19,7 @@ pkg install pulseaudio wget xkeyboard-config virglrenderer-android proot-distro 
 echo "Installing Alpine Linux using proot-distro..."
 pd install alpine > /dev/null 2>&1
 
-echo "Converting Alpine to postmarketOS (this may take 10-20 minutes)..."
+echo "Converting Alpine to postmarketOS (this may take 10-20+ minutes)..."
 pd sh alpine --shared-tmp -- sh -c '
     echo "  Setting up repositories..."
     cat <<EOF > /etc/apk/repositories 
