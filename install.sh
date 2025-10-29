@@ -2,10 +2,6 @@
 clear
 echo "Welcome to the unofficial postmarketOS Termux installer."
 echo ""
-echo "Huge thanks to these guides for helping me make a working automatic installer:"
-echo "https://ivonblog.com/en-us/posts/postmarketos-in-termux-proot/"
-echo "https://wiki.postmarketos.org/wiki/Existing_Alpine_installation"
-echo ""
 
 if command -v pd &>/dev/null; then
     if pd list | grep -q 'alpine'; then
