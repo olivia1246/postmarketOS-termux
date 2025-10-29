@@ -39,7 +39,7 @@ EOF
     apk upgrade > /dev/null 2>&1
     
     echo "  Installing postmarketOS packages..."
-    apk add postmarketos-base cage postmarketos-ui-plasma-mobile postmarketos-tweaks firefox mobile-config-firefox font-noto font-noto-cjk font-noto-cjk-extra font-noto-emoji > /dev/null 2>&1
+    apk add postmarketos-base openbox cage postmarketos-ui-phosh postmarketos-tweaks firefox mobile-config-firefox font-noto font-noto-cjk font-noto-cjk-extra font-noto-emoji > /dev/null 2>&1
     
     echo "  Creating user account..."
     adduser -g wheel,storage,video,audio -D user > /dev/null 2>&1
@@ -69,4 +69,4 @@ echo "To start:"
 echo "1. Run: ./start-pmos.sh"
 echo "2. Open Termux-X11 app"
 echo ""
-echo "Recommended: Check the guide at https://ivonblog.com/en-us/posts/postmarketos-in-termux-proot"
+echo "Recommended: Check the guide at https://ivonblog.com/en-us/posts/postmarketos-in-termux-proot/"
