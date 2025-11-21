@@ -19,7 +19,7 @@ This installer script has been only tested on a Android 14 Xiaomi phone and an A
 
 ## Issues
 
-Phosh may occasionally fail to start. When this happens, a full Termux restart is often required, and it may take several attempts to successfully run the second-part script. In testing, the Android 14 Xiaomi phone was only able to launch Phosh once; subsequent attempts failed regardless of troubleshooting steps. Random crashes can occur but stability is mostly fine when it does run.
+Phosh may occasionally fail to start. When this happens, a full Termux restart is often required, and it may take several attempts to successfully run the second-part script. In testing, the Android 14 Xiaomi phone was only able to launch Phosh once; subsequent attempts failed regardless of troubleshooting steps. Random crashes can occur but stability is mostly fine when it does run. Phosh can also break entirely and seem to never work again unless you set up postmarketOS all over again.
 
 ## Credits
 
