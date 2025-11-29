@@ -17,6 +17,7 @@ While this ["device"](https://wiki.postmarketos.org/wiki/PRoot_aarch64_(proot-aa
 ## Issues
 
 Android 12+ is recommended due to the VirGL renderer. Android 11 and lower do not support VirGL on Termux and crash upon executing the UI. You can disable VirGL on those versions and it will work.
+
 Phosh may occasionally fail to start. When this happens, a full Termux restart is often required, and it may take several attempts to successfully run the second-part script. In some cases it may run Phosh only once or twice and never again, I think this is fixable but I'm not sure how to do that at the moment.
 
 ## Plans
