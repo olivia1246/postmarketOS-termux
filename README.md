@@ -1,37 +1,48 @@
 # postmarketOS for Termux
 
-Experimental unofficial rootless installer for running [postmarketOS](https://postmarketos.org) with [Phosh](https://wiki.postmarketos.org/wiki/Phosh) inside of [Termux](https://termux.dev).
+Experimental unofficial rootless installer for running [postmarketOS](https://postmarketos.org) with [Phosh](https://wiki.postmarketos.org/wiki/Phosh) inside [Termux](https://termux.dev).
 
 ## Prerequisites
 
-- [Termux:X11](https://github.com/termux/termux-x11)
-- Minimum 3-4+ GB of free storage
-- Android 12+ (can run on 8+ but with limits)
-  
+- [Termux:X11](https://github.com/termux/termux-x11) or an RDP client  
+- 3–4 GB+ of free storage  
+- Android version requirements:  
+  - Termux:X11: Android 12+ (Android 8+ supported with software rendering)  
+  - RDP: Android 12+ (Android 5+ supported with software rendering)  
+
 <sub>*Check support for detailed compatibility information.*</sub>
 
 ## Support
 
-While this ["device"](https://wiki.postmarketos.org/wiki/PRoot_aarch64_(proot-aarch64)) is marked as tested and on the official wiki, it is very extremely incomplete, missing device packages and all features are marked as untested as of writing this.
+While this ["device"](https://wiki.postmarketos.org/wiki/PRoot_aarch64_(proot-aarch64)) is marked as tested on the official wiki, it is extremely incomplete: device packages are missing and all features are untested as of writing.
 
 ## Issues
 
-Android 12+ is recommended due to the VirGL renderer. Android 11 and lower do not support VirGL on Termux and crash upon executing the UI. You can disable VirGL on those versions and it will work.
+- Android 12+ recommended due to VirGL renderer support.  
+- Android 11 and lower do not support VirGL on Termux and may crash the UI. You can disable VirGL, but only software rendering will be available.
 
-Phosh may occasionally fail to start. When this happens, a full Termux restart is often required, and it may take several attempts to successfully run the second-part script. In some cases it may run Phosh only once or twice and never again, I think this is fixable but I'm not sure how to do that at the moment.
+### Termux:X11 Specific
 
-## Plans
-
-Alternative installation script using "wayvnc" instead of nesting Wayland inside of X11 with cage. Would increase stability and lessen crashes however display-scaling and visual quality will be impacted. Would also technically allow postmarketOS to be ran on as low as Android 5+ devices with VirGL disabled.
+- Phosh may occasionally fail to start.  
+- If it fails, a full Termux restart is often required.  
+- Sometimes Phosh may run only once or twice. This may be fixable, but currently there is no known solution.
 
 ## Credits
 
-Big thanks to these guides for making it pretty easy for me to make an installer:
-- [Running postmarketOS on Android Termux proot without flashing a custom rom](https://ivonblog.com/en-us/posts/postmarketos-in-termux-proot)
-- [Existing Alpine installation](https://wiki.postmarketos.org/wiki/Existing_Alpine_installation)
+Special thanks to these guides for making the installer possible:  
+
+- [Running postmarketOS on Android Termux proot without flashing a custom ROM](https://ivonblog.com/en-us/posts/postmarketos-in-termux-proot)  
+- [Existing Alpine installation](https://wiki.postmarketos.org/wiki/Existing_Alpine_installation)  
 
 ## Install
 
-```bash
+### Termux:X11
+```
 curl -sSL https://raw.githubusercontent.com/olivia1246/postmarketOS-termux/main/install.sh | bash
+```
+
+### RDP
+
+```
+curl -sSL https://raw.githubusercontent.com/olivia1246/postmarketOS-termux/main/install-rdp.sh | bash
 ```

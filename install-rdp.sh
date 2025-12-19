@@ -1,6 +1,6 @@
 #!/bin/bash
 clear
-echo "Welcome to the unofficial postmarketOS Termux:X11 installer."
+echo "Welcome to the unofficial postmarketOS Termux RDP installer."
 echo ""
 
 if command -v pd &>/dev/null; then
@@ -39,7 +39,7 @@ EOF
     apk upgrade > /dev/null 2>&1
     
     echo "  Installing postmarketOS packages..."
-    apk add postmarketos-base openbox cage postmarketos-ui-phosh postmarketos-tweaks firefox mobile-config-firefox font-noto font-noto-cjk font-noto-cjk-extra font-noto-emoji > /dev/null 2>&1
+    apk add postmarketos-base postmarketos-ui-phosh postmarketos-tweaks gnome-remote-desktop firefox mobile-config-firefox font-noto font-noto-cjk font-noto-cjk-extra font-noto-emoji > /dev/null 2>&1
     
     echo "  Creating user account..."
     adduser -g wheel,storage,video,audio -D user > /dev/null 2>&1
@@ -53,7 +53,7 @@ EOF
 
     echo "  Downloading start script part 2..."
     cd /home/user
-    if wget -q https://raw.githubusercontent.com/olivia1246/postmarketOS-termux/refs/heads/main/start-part2.sh -O start-pmos-part2.sh; then
+    if wget -q https://raw.githubusercontent.com/olivia1246/postmarketOS-termux/refs/heads/main/start-part2-rdp.sh -O start-pmos-part2.sh; then
         chmod +x start-pmos-part2.sh
         chown user:user start-pmos-part2.sh
         echo "Start script part 2 downloaded."
@@ -63,7 +63,7 @@ EOF
 '
 
 echo "Downloading start script part 1..."
-if wget -q https://raw.githubusercontent.com/olivia1246/postmarketOS-termux/refs/heads/main/start-part1.sh -O start-pmos-part1.sh; then
+if wget -q https://raw.githubusercontent.com/olivia1246/postmarketOS-termux/refs/heads/main/start-part1-rdp.sh -O start-pmos-part1.sh; then
     chmod +x start-pmos-part1.sh
     echo "Start script part 1 downloaded."
 else
@@ -76,6 +76,6 @@ echo ""
 echo "To start:"
 echo "1. Run: ./start-pmos-part1.sh"
 echo "2. Run inside the proot: ./start-pmos-part2.sh"
-echo "3. Open Termux-X11 app"
+echo "3. Open RDP client and use the provided credientials"
 echo ""
 echo "Recommended: Check the guide at https://ivonblog.com/en-us/posts/postmarketos-in-termux-proot/"
